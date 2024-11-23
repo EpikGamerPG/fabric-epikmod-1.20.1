@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "epikmod",
+	"version": "${version}",
+	"name": "EpikMod",
+	"description": "This is my first test mod hehehaha",
+	"authors": [
+		"The most epik gamer ever"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/epikmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jackson.epikmod.EpikMod"
+		],
+		"client": [
+			"net.jackson.epikmod.EpikModClient"
+		],
+		"fabric-datagen": [
+			"net.jackson.epikmod.EpikModDataGenerator"
+		]
+	},
+	"mixins": [
+		"epikmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
