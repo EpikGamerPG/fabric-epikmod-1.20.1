@@ -12,5 +12,6 @@ public class EpikMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+
 	}
 }
